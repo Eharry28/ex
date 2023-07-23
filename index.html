@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
   <head> 
+    <script src="env.js"></script>
     <script src="index.js"></script>
   </head>
   <body>
-    <div>Enter First Number : <input type="number" name="Text1" id="Text1" required></div><br>
-    <div>Enter Second Number : <input type="number" name="Text2" id="Text2" required></div><br>
-    <div>Enter First Number : <input type="text" name="txtresult" id="txtresult" readonly></div><br>
-    <div>Enter First Number : <input type="button" name="clickbtn" id="clickbtn" value="Display Result" disabled></div>
+    Enter First Number : <input type="number" id="Text1" /><br><br>
+    Enter Second Number : <input type="number" id="Text2" /><br><br>
+    Result : <input type="text" name="txtresult" id="txtresult" readonly><br><br>
+    <input type="button" name="clickbtn" id="clickbtn" value="Display Result" onclick="txtresult.value=parseInt(tx1.value)+parseInt(tx2.value)" disabled></div>
   </body>
 </html>
